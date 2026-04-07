@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNSTUCK - Anxiety & Panic Support App</title>
+  <meta name="description" content="Unstuck helps you manage anxiety, panic attacks, and intrusive thoughts with guided audio, daily journaling, exposure therapy, habit tracking, and medicine reminders. Download free on iOS & Android.">
+  <meta name="keywords" content="anxiety app, panic attack help, mental health, exposure therapy, guided meditation, journal, habit tracker, medicine tracker, OCD, intrusive thoughts">
+  <meta property="og:title" content="Unstuck - Anxiety & Panic Support">
+  <meta property="og:description" content="Guided audio, daily journaling, exposure therapy, habit tracking, and medicine reminders to help you overcome anxiety.">
+  <meta property="og:image" content="icon.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="icon.png" alt="Unstuck" class="nav-logo-img">
+        <span class="nav-logo-text">UNSTUCK</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#testimonials">Stories</a>
+        <a href="#faq">FAQ</a>
+        <a href="#download" class="nav-cta">Get the App</a>
+      </div>
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span class="material-icons-round">menu</span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#testimonials">Stories</a>
+      <a href="#faq">FAQ</a>
+      <a href="#download" class="nav-cta">Get the App</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="hero-glow hero-glow-3"></div>
+    </div>
+    <div class="container">
+      <div class="hero-inner" data-animate="fade-up">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Evidence-based anxiety support
+        </div>
+        <h1 class="hero-title">
+          Break free from<br>
+          <span class="text-gradient-hero">anxiety & panic</span>
+        </h1>
+        <p class="hero-subtitle">Guided audio, journaling, exposure therapy, habit tracking, and medicine reminders — your complete mental wellness toolkit designed by psychologists.</p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary btn-lg">
+            <span class="material-icons-round">download</span>
+            Download Free
+          </a>
+          <a href="#features" class="btn btn-ghost btn-lg">
+            <span class="material-icons-round">play_circle</span>
+            Explore Features
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-avatars">
+            <div class="trust-avatar" style="background:#2A7D74;">S</div>
+            <div class="trust-avatar" style="background:#F06B5A;">J</div>
+            <div class="trust-avatar" style="background:#F0A818;">A</div>
+            <div class="trust-avatar" style="background:#7C6AE8;">M</div>
+          </div>
+          <div class="hero-trust-text">
+            <div class="hero-trust-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <span>Loved by people worldwide</span>
+          </div>
+        </div>
+
+        <!-- Centered phone with floating cards -->
+        <div class="hero-phone-wrapper" data-animate="fade-up" data-delay="200">
+          <div class="hero-phone-center">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="mock-header">
+                <img src="icon.png" class="mock-logo" alt="">
+                <div class="mock-avatar">U</div>
+              </div>
+              <div class="mock-greeting">Welcome back</div>
+              <div class="mock-section-title">Daily Inspiration</div>
+              <div class="mock-quote-card">
+                <div class="mock-quote-text">"Nothing diminishes anxiety faster than action."</div>
+                <div class="mock-quote-author">- Walter Anderson</div>
+              </div>
+              <div class="mock-section-title">Explore</div>
+              <div class="mock-categories mock-categories-img">
+                <div class="mock-cat-img"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=200&h=200&fit=crop" alt=""><span>Anxiety Relief</span><small>8 audios</small></div>
+                <div class="mock-cat-img"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=200&h=200&fit=crop" alt=""><span>Embrace Sensations</span><small>14 audios</small></div>
+                <div class="mock-cat-img"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=200&h=200&fit=crop" alt=""><span>Situation Guides</span><small>8 audios</small></div>
+                <div class="mock-cat-img"><img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=200&h=200&fit=crop" alt=""><span>Overcome Worry</span><small>4 audios</small></div>
+              </div>
+            </div>
+          </div>
+          <!-- Floating feature cards -->
+          <div class="hero-float-cards">
+            <div class="float-card float-card-1">
+              <div class="float-card-icon" style="background:var(--teal-wash);color:var(--teal);">
+                <span class="material-icons-round">headphones</span>
+              </div>
+              <div>
+                <div class="float-card-text">94+ Audio Sessions</div>
+                <div class="float-card-sub">8 categories</div>
+              </div>
+            </div>
+            <div class="float-card float-card-2">
+              <div class="float-card-icon" style="background:var(--coral-wash);color:var(--coral);">
+                <span class="material-icons-round">edit_note</span>
+              </div>
+              <div>
+                <div class="float-card-text">Daily Journal</div>
+                <div class="float-card-sub">Mood & anxiety tracking</div>
+              </div>
+            </div>
+            <div class="float-card float-card-3">
+              <div class="float-card-icon" style="background:var(--amber-wash);color:var(--amber);">
+                <span class="material-icons-round">medication</span>
+              </div>
+              <div>
+                <div class="float-card-text">Medicine Tracker</div>
+                <div class="float-card-sub">Never miss a dose</div>
+              </div>
+            </div>
+            <div class="float-card float-card-4">
+              <div class="float-card-icon" style="background:var(--purple-wash);color:var(--purple);">
+                <span class="material-icons-round">check_circle</span>
+              </div>
+              <div>
+                <div class="float-card-text">Habit Tracker</div>
+                <div class="float-card-sub">Build healthy routines</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="stats-bar" data-animate="fade-up" data-delay="400">
+        <div class="stat-item">
+          <span class="stat-number" data-count="94">0</span>
+          <span class="stat-label">Audio Sessions</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="8">0</span>
+          <span class="stat-label">Categories</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="6">0</span>
+          <span class="stat-label">Tracking Tools</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="247">0</span>
+          <span class="stat-label">24/7 SOS Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FEATURES — BENTO GRID ═══════════════ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-badge">Features</span>
+        <h2 class="section-title">Everything you need to<br><span class="text-gradient">overcome anxiety</span></h2>
+        <p class="section-subtitle">A comprehensive toolkit built with evidence-based approaches to help you manage anxiety at your own pace.</p>
+      </div>
+
+      <div class="bento-grid">
+
+        <!-- 1. AUDIO SESSIONS — Large card -->
+        <div class="bento-card bento-lg" data-animate="fade-up">
+          <div class="bento-lg-inner">
+            <div class="bento-lg-content">
+              <div class="bento-card-icon bento-card-icon-teal">
+                <span class="material-icons-round">headphones</span>
+              </div>
+              <h3>94+ Guided Audio Sessions</h3>
+              <p>Professionally crafted audio across 8 categories. From panic attack relief to guided meditations and calming nature sounds for sleep.</p>
+              <div class="bento-tags">
+                <span class="bento-tag bento-tag-teal">Anxiety Relief</span>
+                <span class="bento-tag bento-tag-teal">Guided Meditations</span>
+                <span class="bento-tag bento-tag-teal">Nature Sounds</span>
+                <span class="bento-tag bento-tag-teal">Sleep Support</span>
+              </div>
+              <!-- Mini player -->
+              <div class="mock-player-mini">
+                <div class="mock-player-art">&#x1F9D8;</div>
+                <div class="mock-player-title">Deep Acceptance</div>
+                <div class="mock-player-cat">Guided Meditations</div>
+                <div class="mock-player-bar">
+                  <div class="mock-player-fill"></div>
+                  <div class="mock-player-thumb"></div>
+                </div>
+                <div class="mock-player-times"><span>3:24</span><span>22:16</span></div>
+                <div class="mock-player-controls">
+                  <div class="mock-ctrl">&#x23EE;</div>
+                  <div class="mock-ctrl mock-ctrl-play">&#x23F8;</div>
+                  <div class="mock-ctrl">&#x23ED;</div>
+                </div>
+              </div>
+            </div>
+            <div class="bento-lg-visual">
+              <div class="bento-phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="mock-cat-header">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=150&fit=crop" alt="" class="mock-cat-banner">
+                    <div class="mock-cat-header-text">Anxiety Relief</div>
+                    <div class="mock-cat-header-sub">8 audios &middot; 1 hr 30 min</div>
+                  </div>
+                  <div class="mock-track-list">
+                    <div class="mock-track"><div class="mock-track-num">1</div><div class="mock-track-info"><div class="mock-track-name">Introduction to Anxiety</div><div class="mock-track-dur">4 min</div></div><div class="mock-track-play">&#9654;</div></div>
+                    <div class="mock-track"><div class="mock-track-num">2</div><div class="mock-track-info"><div class="mock-track-name">The DARE Response</div><div class="mock-track-dur">10 min</div></div><div class="mock-track-play">&#9654;</div></div>
+                    <div class="mock-track active"><div class="mock-track-num">3</div><div class="mock-track-info"><div class="mock-track-name">Introduction to Panic At...</div><div class="mock-track-dur">4 min</div></div><div class="mock-track-play">&#9654;</div></div>
+                    <div class="mock-track"><div class="mock-track-num">4</div><div class="mock-track-info"><div class="mock-track-name">The DARE Response for ...</div><div class="mock-track-dur">12 min</div></div><div class="mock-track-play">&#9654;</div></div>
+                    <div class="mock-track"><div class="mock-track-num">5</div><div class="mock-track-info"><div class="mock-track-name">Doctor Explains How to ...</div><div class="mock-track-dur">7 min</div></div><div class="mock-track-play">&#9654;</div></div>
+                    <div class="mock-track"><div class="mock-track-num">6</div><div class="mock-track-info"><div class="mock-track-name">Air Hunger</div><div class="mock-track-dur">21 min</div></div><div class="mock-track-play">&#9654;</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. DAILY JOURNAL — Medium card -->
+        <div class="bento-card bento-md" data-animate="fade-up" data-delay="100">
+          <div class="bento-card-icon bento-card-icon-coral">
+            <span class="material-icons-round">edit_note</span>
+          </div>
+          <h3>Daily Mood Journal</h3>
+          <p>Track mood, anxiety levels, sleep quality, and energy with a beautiful check-in wizard. Watch your progress with streaks and charts.</p>
+          <div class="bento-tags">
+            <span class="bento-tag bento-tag-coral">Mood Tracking</span>
+            <span class="bento-tag bento-tag-coral">Anxiety 0-10</span>
+            <span class="bento-tag bento-tag-coral">Streaks</span>
+          </div>
+          <div class="bento-illustration">
+            <div class="mock-journal-title">Journal</div>
+            <div class="mock-journal-date">Mon, Apr 6</div>
+            <div class="mock-journal-week">
+              <div class="mock-day-col"><div class="mock-day-label">MON</div><div class="mock-day mock-day-active">6</div></div>
+              <div class="mock-day-col"><div class="mock-day-label">TUE</div><div class="mock-day">7</div></div>
+              <div class="mock-day-col"><div class="mock-day-label">WED</div><div class="mock-day">8</div></div>
+              <div class="mock-day-col"><div class="mock-day-label">THU</div><div class="mock-day">9</div></div>
+              <div class="mock-day-col"><div class="mock-day-label">FRI</div><div class="mock-day">10</div></div>
+              <div class="mock-day-col"><div class="mock-day-label">SAT</div><div class="mock-day">11</div></div>
+              <div class="mock-day-col"><div class="mock-day-label">SUN</div><div class="mock-day">12</div></div>
+            </div>
+            <div class="mock-anxiety-chart">
+              <div class="mock-anxiety-chart-label">THIS WEEK'S ANXIETY LEVEL</div>
+              <div class="mock-anxiety-bars">
+                <div class="mock-anxiety-bar" style="height:60%;"></div>
+                <div class="mock-anxiety-bar" style="height:45%;"></div>
+                <div class="mock-anxiety-bar" style="height:70%;"></div>
+                <div class="mock-anxiety-bar" style="height:35%;"></div>
+                <div class="mock-anxiety-bar" style="height:50%;"></div>
+                <div class="mock-anxiety-bar" style="height:25%;"></div>
+                <div class="mock-anxiety-bar" style="height:40%;"></div>
+              </div>
+            </div>
+            <div class="mock-journal-cta">
+              <div class="mock-journal-cta-title">How are you today?</div>
+              <div class="mock-journal-cta-sub">Take a moment to check in with yourself.</div>
+              <div class="mock-journal-btn">Start Daily Check-in</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. EXPOSURE JOURNAL — Medium card -->
+        <div class="bento-card bento-md" data-animate="fade-up" data-delay="100">
+          <div class="bento-card-icon bento-card-icon-amber">
+            <span class="material-icons-round">psychology</span>
+          </div>
+          <h3>Exposure Journal</h3>
+          <p>Log exposure exercises, track anxiety and willingness levels, and export detailed PDF reports to share with your therapist.</p>
+          <div class="bento-tags">
+            <span class="bento-tag bento-tag-amber">Log Exposures</span>
+            <span class="bento-tag bento-tag-amber">PDF Reports</span>
+            <span class="bento-tag bento-tag-amber">Track Progress</span>
+          </div>
+          <div class="bento-illustration">
+            <div class="mock-exposure-header">
+              <div class="mock-exposure-title">Exposure Journal</div>
+            </div>
+            <div class="mock-metrics-row" style="margin-bottom:12px;">
+              <div class="mock-metric"><div class="mock-metric-val" style="color:#2A7D74;">12</div><div class="mock-metric-label">Total logs</div></div>
+              <div class="mock-metric"><div class="mock-metric-val" style="color:#F06B5A;">3</div><div class="mock-metric-label">This week</div></div>
+              <div class="mock-metric"><div class="mock-metric-val" style="color:#F0A818;">5</div><div class="mock-metric-label">Day streak</div></div>
+            </div>
+            <div class="mock-exposure-btn">+ Log New Exposure</div>
+            <div class="mock-exposure-list">
+              <div class="mock-exposure-item">
+                <div class="mock-exposure-dot"></div>
+                <div class="mock-exposure-info">
+                  <div class="mock-exposure-name">Public speaking</div>
+                  <div class="mock-exposure-meta">Today &middot; <span style="color:var(--coral);font-weight:700;">ANXIETY 5/10</span> &middot; 15 min</div>
+                </div>
+              </div>
+              <div class="mock-exposure-item">
+                <div class="mock-exposure-dot"></div>
+                <div class="mock-exposure-info">
+                  <div class="mock-exposure-name">Crowded mall visit</div>
+                  <div class="mock-exposure-meta">Yesterday &middot; <span style="color:var(--coral);font-weight:700;">ANXIETY 7/10</span> &middot; 30 min</div>
+                </div>
+              </div>
+              <div class="mock-exposure-item">
+                <div class="mock-exposure-dot"></div>
+                <div class="mock-exposure-info">
+                  <div class="mock-exposure-name">Phone call to stranger</div>
+                  <div class="mock-exposure-meta">Apr 4 &middot; <span style="color:var(--coral);font-weight:700;">ANXIETY 8/10</span> &middot; 5 min</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. HABIT TRACKER — Medium-alt card -->
+        <div class="bento-card bento-md-alt" data-animate="fade-up" data-delay="100">
+          <div class="bento-card-icon bento-card-icon-purple">
+            <span class="material-icons-round">check_circle</span>
+          </div>
+          <h3>Habit Tracker</h3>
+          <p>Build healthy daily routines that support your recovery. Track meditation, exercise, journaling, and custom habits with streaks and visual progress.</p>
+          <div class="bento-tags">
+            <span class="bento-tag bento-tag-purple">Daily Habits</span>
+            <span class="bento-tag bento-tag-purple">Streaks</span>
+            <span class="bento-tag bento-tag-purple">Visual Progress</span>
+          </div>
+          <div class="bento-illustration">
+            <!-- Habit contribution grid -->
+            <div class="habit-grid">
+              <div class="habit-dot filled-light"></div><div class="habit-dot filled"></div><div class="habit-dot filled-strong"></div><div class="habit-dot filled"></div><div class="habit-dot filled-light"></div><div class="habit-dot"></div><div class="habit-dot filled"></div>
+              <div class="habit-dot filled-strong"></div><div class="habit-dot filled"></div><div class="habit-dot filled-light"></div><div class="habit-dot filled-strong"></div><div class="habit-dot filled"></div><div class="habit-dot filled-strong"></div><div class="habit-dot filled"></div>
+              <div class="habit-dot"></div><div class="habit-dot filled-light"></div><div class="habit-dot filled"></div><div class="habit-dot filled-strong"></div><div class="habit-dot filled"></div><div class="habit-dot filled-light"></div><div class="habit-dot filled-strong"></div>
+              <div class="habit-dot filled"></div><div class="habit-dot filled-strong"></div><div class="habit-dot filled"></div><div class="habit-dot"></div><div class="habit-dot filled-strong"></div><div class="habit-dot filled"></div><div class="habit-dot filled-strong"></div>
+            </div>
+            <div class="habit-labels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+            <!-- Habit items -->
+            <div class="habit-items">
+              <div class="habit-item">
+                <div class="habit-check done"></div>
+                <span class="habit-item-text">Morning meditation</span>
+                <span class="habit-item-streak">&#x1F525; 12 days</span>
+              </div>
+              <div class="habit-item">
+                <div class="habit-check done"></div>
+                <span class="habit-item-text">Journal entry</span>
+                <span class="habit-item-streak">&#x1F525; 8 days</span>
+              </div>
+              <div class="habit-item">
+                <div class="habit-check"></div>
+                <span class="habit-item-text">30 min walk</span>
+                <span class="habit-item-streak" style="background:var(--haze);color:var(--stone);">Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. MEDICINE TRACKER — Medium-alt card -->
+        <div class="bento-card bento-md-alt" data-animate="fade-up" data-delay="200">
+          <div class="bento-card-icon bento-card-icon-teal">
+            <span class="material-icons-round">medication</span>
+          </div>
+          <h3>Medicine Tracker</h3>
+          <p>Never miss a dose. Track medications, set reminders, log adherence, and share reports with your healthcare provider for better treatment outcomes.</p>
+          <div class="bento-tags">
+            <span class="bento-tag bento-tag-teal">Reminders</span>
+            <span class="bento-tag bento-tag-teal">Dosage Tracking</span>
+            <span class="bento-tag bento-tag-teal">Adherence Reports</span>
+          </div>
+          <div class="bento-illustration">
+            <div class="med-cards">
+              <div class="med-card">
+                <div class="med-icon-pill" style="background:var(--teal-wash);">&#x1F48A;</div>
+                <div class="med-info">
+                  <div class="med-name">Setran 50mg</div>
+                  <div class="med-dose">1 tablet &middot; Morning</div>
+                </div>
+                <span class="med-status med-taken">&#x2713; Taken</span>
+              </div>
+              <div class="med-card">
+                <div class="med-icon-pill" style="background:var(--purple-wash);">&#x1F48A;</div>
+                <div class="med-info">
+                  <div class="med-name">Propnolol 10mg</div>
+                  <div class="med-dose">1 tablet &middot; As needed</div>
+                </div>
+                <span class="med-status med-upcoming">2:00 PM</span>
+              </div>
+              <div class="med-card">
+                <div class="med-icon-pill" style="background:var(--amber-wash);">&#x1F48A;</div>
+                <div class="med-info">
+                  <div class="med-name">Setran 50mg</div>
+                  <div class="med-dose">1 tablet &middot; Evening</div>
+                </div>
+                <span class="med-status med-upcoming">8:00 PM</span>
+              </div>
+            </div>
+            <div class="med-progress">
+              <div class="med-progress-label"><span>Weekly adherence</span><span>92%</span></div>
+              <div class="med-progress-bar"><div class="med-progress-fill" style="width:92%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Small features grid -->
+      <div class="features-mini-grid" data-animate="fade-up">
+        <div class="feature-mini">
+          <div class="feature-mini-icon" style="background:var(--teal-wash);color:var(--teal);"><span class="material-icons-round">emoji_events</span></div>
+          <h4>7-Day Challenges</h4>
+          <p>Structured programs for health anxiety, social anxiety, intrusive thoughts, and anticipatory anxiety.</p>
+        </div>
+        <div class="feature-mini">
+          <div class="feature-mini-icon" style="background:var(--coral-wash);color:var(--coral);"><span class="material-icons-round">sos</span></div>
+          <h4>SOS Mode</h4>
+          <p>Instant panic attack relief audio and crisis helpline numbers when you need them most.</p>
+        </div>
+        <div class="feature-mini">
+          <div class="feature-mini-icon" style="background:var(--amber-wash);color:var(--amber);"><span class="material-icons-round">nights_stay</span></div>
+          <h4>Sleep Support</h4>
+          <p>End insomnia with guided sleep sessions, meditations, and calming nature soundscapes.</p>
+        </div>
+        <div class="feature-mini">
+          <div class="feature-mini-icon" style="background:var(--purple-wash);color:var(--purple);"><span class="material-icons-round">playlist_add</span></div>
+          <h4>Custom Playlists</h4>
+          <p>Create personal playlists of your favorite audio sessions for quick access.</p>
+        </div>
+        <div class="feature-mini">
+          <div class="feature-mini-icon" style="background:var(--coral-wash);color:var(--coral);"><span class="material-icons-round">download</span></div>
+          <h4>Offline Downloads</h4>
+          <p>Download sessions for offline listening anywhere, anytime.</p>
+        </div>
+        <div class="feature-mini">
+          <div class="feature-mini-icon" style="background:var(--teal-wash);color:var(--teal);"><span class="material-icons-round">lock</span></div>
+          <h4>Private & Secure</h4>
+          <p>Your data is encrypted and never sold. Complete privacy for your mental health journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-badge">How It Works</span>
+        <h2 class="section-title">Your path to <span class="text-gradient-coral">recovery</span></h2>
+        <p class="section-subtitle">Simple, effective, and at your own pace.</p>
+      </div>
+      <div class="steps-grid" data-animate="fade-up">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon"><span class="material-icons-round">headphones</span></div>
+          <h3>Listen & Learn</h3>
+          <p>Start with the DARE Response audio to understand anxiety and learn evidence-based tools to overcome it.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon"><span class="material-icons-round">edit_note</span></div>
+          <h3>Track Daily</h3>
+          <p>Check in with your mood, anxiety, and sleep. Track habits and medications. Build awareness through consistency.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon"><span class="material-icons-round">trending_up</span></div>
+          <h3>Face Your Fears</h3>
+          <p>Log exposure exercises, take on 7-day challenges, and gradually build courage to reduce anxiety.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <div class="step-icon"><span class="material-icons-round">favorite</span></div>
+          <h3>Live Freely</h3>
+          <p>Watch your anxiety decrease over time. Share progress with your therapist and celebrate your recovery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TESTIMONIALS ═══════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-badge">Stories</span>
+        <h2 class="section-title">People who got <span class="text-gradient">unstuck</span></h2>
+      </div>
+      <div class="testimonials-grid" data-animate="fade-up">
+        <div class="testimonial-card testimonial-featured">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="testimonial-text">"After years of panic attacks, the DARE Response audio changed everything. I finally understand what's happening in my body and how to respond. This app gave me my life back."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#2A7D74,#1F6560);">S</div>
+            <div>
+              <div class="testimonial-name">Sarah M.</div>
+              <div class="testimonial-role">Recovered from panic disorder</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="testimonial-text">"The habit tracker keeps me accountable. Meditation, journaling, and exercise are now part of my daily routine."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#7C6AE8,#5A48C6);">L</div>
+            <div>
+              <div class="testimonial-name">Laura P.</div>
+              <div class="testimonial-role">Building healthy anxiety routines</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="testimonial-text">"The medicine tracker is a lifesaver. My psychiatrist loves seeing my adherence reports at our check-ins."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#F0A818,#D4960A);">R</div>
+            <div>
+              <div class="testimonial-name">Ryan D.</div>
+              <div class="testimonial-role">Managing GAD with medication</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="testimonial-text">"The daily journal helped me see patterns I never noticed. My therapist loves the exposure log PDFs."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#F06B5A,#C0392B);">J</div>
+            <div>
+              <div class="testimonial-name">James R.</div>
+              <div class="testimonial-role">Managing social anxiety</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="testimonial-text">"SOS mode saved me during a flight. Having instant calming audio when panic hits is incredible."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#6B7E80,#4A5E60);">A</div>
+            <div>
+              <div class="testimonial-name">Aisha K.</div>
+              <div class="testimonial-role">Overcame flying anxiety</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FAQ ═══════════════ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-badge">FAQ</span>
+        <h2 class="section-title">Common questions</h2>
+      </div>
+      <div class="faq-list" data-animate="fade-up">
+        <details class="faq-item">
+          <summary class="faq-question">Is Unstuck a replacement for therapy?</summary>
+          <p class="faq-answer">No. Unstuck is designed to complement professional treatment, not replace it. The tools are based on evidence-based approaches like ACT and exposure therapy, but we always recommend working with a qualified therapist for personalized care.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Is the app free?</summary>
+          <p class="faq-answer">Yes! You get full access to all 94+ audio sessions, SOS mode, and 10 free journal entries. Subscribers get unlimited journaling, exposure logs, habit tracking, medicine tracking, and personalized evaluations.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What tracking tools are included?</summary>
+          <p class="faq-answer">Unstuck includes a daily mood journal, exposure therapy journal, habit tracker, and medicine tracker. All tools are designed to work together to give you and your therapist a complete picture of your mental health journey.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Is my data private and secure?</summary>
+          <p class="faq-answer">Absolutely. Your data is encrypted, stored securely, and never sold to third parties. You can delete your account and all associated data at any time from the app settings.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can I use Unstuck offline?</summary>
+          <p class="faq-answer">Yes. You can download audio sessions for offline listening. Journal, habit, and exposure entries are saved locally and synced when you're back online.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What types of anxiety does Unstuck help with?</summary>
+          <p class="faq-answer">Unstuck covers general anxiety, panic attacks, health anxiety, social anxiety, intrusive thoughts, anticipatory anxiety, agoraphobia, driving anxiety, flying anxiety, and insomnia related to anxiety.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CTA / DOWNLOAD ═══════════════ -->
+  <section class="cta" id="download">
+    <div class="container">
+      <div class="cta-card" data-animate="fade-up">
+        <div class="cta-bg-shapes">
+          <div class="cta-shape cta-shape-1"></div>
+          <div class="cta-shape cta-shape-2"></div>
+          <div class="cta-shape cta-shape-3"></div>
+        </div>
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to get unstuck?</h2>
+          <p class="cta-subtitle">Start your recovery journey today. Audio sessions, journaling, habit tracking, medicine reminders — all in one place.</p>
+          <div class="cta-actions">
+            <a href="#" class="btn btn-white btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </a>
+            <a href="#" class="btn btn-white-outline btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+              Google Play
+            </a>
+          </div>
+          <p class="cta-note">Free to start. No credit card required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <img src="icon.png" alt="Unstuck" class="footer-logo">
+            <span class="footer-brand-name">UNSTUCK</span>
+          </div>
+          <p class="footer-tagline">Anxiety & Panic Support</p>
+          <p class="footer-desc">Evidence-based tools to help you manage anxiety, panic attacks, and intrusive thoughts.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#download">Download</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <a href="mailto:support@unstuckapp.com">Contact Us</a>
+            <a href="#">Help Center</a>
+            <a href="#">Crisis Resources</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Unstuck. All rights reserved.</p>
+        <p class="footer-disclaimer">Unstuck is not a substitute for professional medical advice, diagnosis, or treatment. If you are in crisis, please contact your local emergency services or a crisis helpline.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
