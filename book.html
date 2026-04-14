@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Session - Unstuck | Anxiety & Panic Support</title>
+  <meta name="description" content="Book a free consultation with the Unstuck team. Get personalized guidance on managing anxiety, panic attacks, and mental wellness.">
+  <meta property="og:title" content="Book a Session - Unstuck">
+  <meta property="og:description" content="Book a free 30-minute consultation with the Unstuck team.">
+  <meta property="og:image" content="icon.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .booking-page { padding: 120px 0 60px; min-height: 100vh; }
+    .booking-header { text-align: center; max-width: 600px; margin: 0 auto 40px; }
+    .booking-header h1 { font-size: 40px; font-weight: 900; letter-spacing: -1px; margin-bottom: 12px; }
+    .booking-header p { font-size: 17px; color: var(--text-sub); line-height: 1.7; }
+    .booking-features { display: flex; justify-content: center; gap: 32px; margin-top: 24px; flex-wrap: wrap; }
+    .booking-feature { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--teal); }
+    .booking-feature .material-icons-round { font-size: 20px; }
+    .calendly-wrapper {
+      max-width: 900px; margin: 0 auto;
+      background: var(--surface); border-radius: var(--radius-xl);
+      border: 1px solid var(--border); overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+      min-height: 700px;
+    }
+    .calendly-inline-widget { min-width: 320px; height: 700px; }
+    @media (max-width: 768px) {
+      .booking-header h1 { font-size: 28px; }
+      .booking-features { gap: 16px; }
+      .calendly-inline-widget { height: 800px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="icon.png" alt="Unstuck" class="nav-logo-img">
+        <span class="nav-logo-text">UNSTUCK</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#download" class="nav-cta">Get the App</a>
+      </div>
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span class="material-icons-round">menu</span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#download" class="nav-cta">Get the App</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ BOOKING ═══════════════ -->
+  <section class="booking-page">
+    <div class="container">
+      <div class="booking-header" data-animate="fade-up">
+        <span class="section-badge">Book a Session</span>
+        <h1>Let's talk about your <span class="text-gradient">wellness journey</span></h1>
+        <p>Schedule a free 30-minute consultation with our team. We'll help you understand how Unstuck can support your mental health goals.</p>
+        <div class="booking-features">
+          <div class="booking-feature">
+            <span class="material-icons-round">schedule</span>
+            30 minutes
+          </div>
+          <div class="booking-feature">
+            <span class="material-icons-round">videocam</span>
+            Video call
+          </div>
+          <div class="booking-feature">
+            <span class="material-icons-round">paid</span>
+            100% Free
+          </div>
+        </div>
+      </div>
+
+      <div class="calendly-wrapper" data-animate="fade-up" data-delay="200">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/unstuck-mobileapp/30min?hide_gdpr_banner=1&primary_color=2A7D74"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <img src="icon.png" alt="Unstuck" class="footer-logo">
+            <span class="footer-brand-name">UNSTUCK</span>
+          </div>
+          <p class="footer-tagline">Anxiety & Panic Support</p>
+          <p class="footer-desc">A product of <strong>AFOM Solutions Pvt Ltd</strong><br>CIN: U72200TG2019PTC134304<br>16-9-417/A/1, Near Water Tank, Opposite R J Function Hall Old Malakpet,<br>Hyderabad, Telangana 500036, India</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="index.html#download">Download</a>
+            <a href="index.html#faq">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <a href="mailto:hello@unstuckforlife.com">Contact Us</a>
+            <a href="book.html">Book a Session</a>
+            <a href="#">Crisis Resources</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>AFOM Solutions Pvt Ltd</strong>. All rights reserved. Unstuck is a registered product of AFOM Solutions Pvt Ltd.</p>
+        <p class="footer-disclaimer">Unstuck is not a substitute for professional medical advice, diagnosis, or treatment. If you are in crisis, please contact your local emergency services or a crisis helpline.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Calendly embed script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script src="script.js"></script>
+</body>
+</html>
