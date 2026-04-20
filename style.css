@@ -246,8 +246,8 @@ img { max-width: 100%; }
 .bento-tag-purple { color: var(--purple); background: var(--purple-wash); }
 
 /* Bento sizes */
-.bento-lg { grid-column: span 7; min-height: 400px; }
-.bento-md { grid-column: span 5; min-height: 400px; }
+.bento-lg { grid-column: span 12; min-height: 400px; }
+.bento-md { grid-column: span 6; min-height: 400px; }
 .bento-md-alt { grid-column: span 6; min-height: 380px; }
 .bento-sm { grid-column: span 4; }
 
