@@ -15,7 +15,18 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    .booking-page { padding: 120px 0 60px; min-height: 100vh; }
+    .booking-page {
+      padding: 120px 0 60px; min-height: 100vh;
+      background: linear-gradient(135deg, #D4E8E3 0%, #B8DDD3 40%, #8FC7B8 100%);
+      position: relative;
+    }
+    .booking-page::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(42,125,116,0.15), transparent 50%),
+        radial-gradient(circle at 80% 60%, rgba(42,125,116,0.12), transparent 55%);
+    }
+    .booking-page > .container { position: relative; z-index: 1; }
     .booking-header { text-align: center; max-width: 600px; margin: 0 auto 40px; }
     .booking-header h1 { font-size: 40px; font-weight: 900; letter-spacing: -1px; margin-bottom: 12px; }
     .booking-header p { font-size: 17px; color: var(--text-sub); line-height: 1.7; }
