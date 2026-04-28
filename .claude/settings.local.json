@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Read(//c/tmp/**)",
+      "Bash(find ~/Downloads -name screenshot* -mmin -10)",
+      "Read(//c/Users/omar_/AppData/Local/Temp/**)",
+      "Bash(curl -s -o /c/Users/omar_/Desktop/unstuck-website/icon-new.png \"http://localhost:8081/assets/?unstable_path=.%2Fassets/unstuck-icon.png\")"
+    ]
+  }
+}
