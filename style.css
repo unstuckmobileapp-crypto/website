@@ -157,7 +157,9 @@ img { max-width: 100%; }
   width: 280px; height: 560px; position: relative; z-index: 2;
   background: var(--surface); border-radius: 40px; overflow: hidden;
   box-shadow: 0 32px 80px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.04);
+  border: 6px solid #1A2B2A;
 }
+.hero-phone-img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 28px; }
 .hero-phone-center .phone-notch { height: 32px; background: var(--surface); position: relative; }
 .hero-phone-center .phone-notch::after { content: ''; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 80px; height: 6px; border-radius: 3px; background: var(--haze); }
 .hero-phone-center .phone-screen { padding: 8px 16px 20px; }
@@ -253,14 +255,25 @@ img { max-width: 100%; }
 
 /* Bento phone mockup */
 .bento-phone {
-  width: 220px; height: 380px; background: var(--surface); border-radius: 28px;
-  overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.03);
+  width: 240px; height: 480px; background: #1A2B2A; border-radius: 32px;
+  overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04);
   margin-top: 20px;
   position: relative;
+  padding: 6px;
 }
+.bento-phone-img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 26px; }
 .bento-phone .phone-notch { height: 24px; background: var(--surface); position: relative; }
 .bento-phone .phone-notch::after { content: ''; position: absolute; top: 7px; left: 50%; transform: translateX(-50%); width: 60px; height: 5px; border-radius: 3px; background: var(--haze); }
 .bento-phone .phone-screen { padding: 6px 12px 16px; overflow: hidden; }
+
+/* Bento illustration with full screenshot */
+.bento-illustration-img {
+  margin-top: 20px; padding: 0; background: #1A2B2A;
+  border-radius: 24px; border: none; overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+  padding: 6px;
+}
+.bento-screen-img { width: 100%; height: auto; object-fit: cover; display: block; border-radius: 18px; max-height: 480px; }
 
 /* Bento large card layout */
 .bento-lg-inner { display: flex; gap: 24px; align-items: flex-start; }

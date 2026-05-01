@@ -1,1 +1,6 @@
 .vercel
+images/*.jpeg
+images/*.jpg
+images/*.png
+images/crop.py
+!images/clean/
