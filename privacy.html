@@ -82,7 +82,7 @@
           <li><strong>Device Information:</strong> Device type, operating system version, and unique device identifiers necessary for push notification delivery.</li>
           <li><strong>Push Notification Tokens:</strong> FCM token (Android), APNs token (iOS), and OneSignal player ID — used to deliver notifications such as reminders and re-engagement messages. Not shared with any party other than OneSignal.</li>
           <li><strong>Usage Data:</strong> App feature usage patterns, session duration, and interaction data to improve our services.</li>
-          <li><strong>Log Data:</strong> Error logs, crash reports, stack traces, and breadcrumbs (no PII) to diagnose and fix technical issues. Reported via Sentry.</li>
+          <li><strong>Log Data:</strong> Error logs, crash reports, stack traces, and breadcrumbs (no PII) to diagnose and fix technical issues. Reported via Firebase Crashlytics.</li>
         </ul>
         <p>We do not currently use any third-party analytics services beyond crash and exception reporting. If we add analytics in the future, we will update this Privacy Policy accordingly.</p>
 
@@ -272,9 +272,9 @@
                 <td style="padding:10px; border:1px solid #D0E0DE;">OneSignal player ID, FCM/APNs token, anonymized user UUID, subscription tier tag</td>
               </tr>
               <tr>
-                <td style="padding:10px; border:1px solid #D0E0DE;"><strong>Sentry</strong> (sentry.io)</td>
+                <td style="padding:10px; border:1px solid #D0E0DE;"><strong>Firebase Crashlytics</strong> (firebase.google.com, Google)</td>
                 <td style="padding:10px; border:1px solid #D0E0DE;">Crash and JavaScript exception reporting</td>
-                <td style="padding:10px; border:1px solid #D0E0DE;">Stack traces, OS version, anonymized user UUID, breadcrumbs (no PII)</td>
+                <td style="padding:10px; border:1px solid #D0E0DE;">Stack traces, OS/device model, anonymized user UUID, breadcrumbs (no PII)</td>
               </tr>
               <tr>
                 <td style="padding:10px; border:1px solid #D0E0DE;"><strong>Cloudflare Workers / CDN</strong> (cdn.unstuckforlife.com)</td>
@@ -309,7 +309,7 @@
           <li><a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">OpenAI Privacy Policy</a></li>
           <li><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a></li>
           <li><a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener noreferrer">OneSignal Privacy Policy</a></li>
-          <li><a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">Sentry Privacy Policy</a></li>
+          <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase / Crashlytics Privacy Policy</a></li>
           <li><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare Privacy Policy</a></li>
         </ul>
         <p>The App may also contain links to third-party websites or content that we do not operate. We are not responsible for the privacy practices of these third parties.</p>
