@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.afom.unstuck",
+      "sha256_cert_fingerprints": [
+        "9C:FB:25:77:22:5C:86:B9:8B:9B:50:7A:A4:CB:AA:99:33:3E:31:86:75:21:1F:57:8D:99:9A:4E:05:E9:0B:00",
+        "A0:CB:56:F3:59:F3:71:24:2D:C8:6C:17:47:C1:7F:87:F1:2C:B5:2D:46:9D:48:C7:CD:58:1E:DB:50:03:41:75"
+      ]
+    }
+  }
+]
