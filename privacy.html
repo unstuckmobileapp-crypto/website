@@ -66,7 +66,7 @@
         <h3>1.1 Information You Provide Directly</h3>
         <p>We collect information that you voluntarily provide when you create an account and use the App:</p>
         <ul>
-          <li><strong>Account Information:</strong> Phone number (required for authentication), email address (optional), display name, gender, and profile photo.</li>
+          <li><strong>Account Information:</strong> Email address (required for authentication), display name, gender, and profile photo.</li>
           <li><strong>Journal Entries:</strong> Mood ratings, anxiety levels, sleep quality, energy levels, and any free-text reflections you record in your daily journal.</li>
           <li><strong>Exposure Therapy Logs:</strong> Records of your exposure therapy sessions, including anxiety ratings (SUDS scores), session notes, hierarchy items, and progress data.</li>
           <li><strong>Medications:</strong> Medication name, dosage, schedule, and optional notes recorded in the medication-tracker feature.</li>
@@ -92,7 +92,6 @@
           <li><strong>Google OAuth:</strong> Your name, email address, and profile picture associated with your Google account.</li>
           <li><strong>Facebook/Meta OAuth:</strong> Your name, email address, and profile picture associated with your Facebook account.</li>
           <li><strong>Apple Sign-In:</strong> Your name and email address (or a private relay email address if you choose to hide your email) associated with your Apple ID.</li>
-          <li><strong>Phone OTP:</strong> Your phone number, which is used to send a one-time verification code via SMS.</li>
         </ul>
         <p>We do not receive or store your passwords from any third-party authentication provider.</p>
 
@@ -101,7 +100,7 @@
         <p>We use the information we collect for the following purposes:</p>
         <ul>
           <li><strong>Provide and Maintain the App:</strong> To create and manage your account, deliver the core features of the App (guided audio, journaling, exposure therapy), and personalize your experience.</li>
-          <li><strong>Authentication:</strong> To verify your identity when you sign in via phone OTP, Google, Facebook, or Apple.</li>
+          <li><strong>Authentication:</strong> To verify your identity when you sign in via email, Google, Facebook, or Apple.</li>
           <li><strong>Improve Our Services:</strong> To understand how users interact with the App and identify areas for improvement, bug fixes, and new feature development.</li>
           <li><strong>Communications:</strong> To send you important service-related notifications, such as security alerts, account verification messages, and updates to our terms or policies.</li>
           <li><strong>Safety and Security:</strong> To detect, prevent, and address technical issues, fraud, and abuse.</li>
@@ -117,7 +116,6 @@
         <p>We use trusted third-party service providers to operate and support the App. These providers have access to your information only to perform specific tasks on our behalf and are contractually obligated to protect your data:</p>
         <ul>
           <li><strong>Supabase:</strong> Provides our database (PostgreSQL), user authentication, and file storage infrastructure. Your account data, journal entries, exposure therapy logs, and uploaded files (audio, profile photos) are stored on Supabase servers located in the US East region. Supabase processes data in accordance with their privacy policy and data processing agreements.</li>
-          <li><strong>Twilio:</strong> Provides SMS delivery for phone number verification (one-time passcodes). Twilio receives your phone number solely for the purpose of sending verification codes and does not use it for any other purpose.</li>
         </ul>
 
         <h3>3.2 Legal Requirements</h3>
@@ -286,11 +284,6 @@
                 <td style="padding:10px; border:1px solid #D0E0DE;">Authentication, primary database hosting, file storage</td>
                 <td style="padding:10px; border:1px solid #D0E0DE;">All user-provided data (account info, journal entries, exposure logs, medications, habits, playlists)</td>
               </tr>
-              <tr>
-                <td style="padding:10px; border:1px solid #D0E0DE;"><strong>Twilio</strong> (twilio.com)</td>
-                <td style="padding:10px; border:1px solid #D0E0DE;">SMS delivery for phone-OTP authentication</td>
-                <td style="padding:10px; border:1px solid #D0E0DE;">Phone number, one-time verification code</td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -304,7 +297,6 @@
           <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
           <li><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">Meta/Facebook Privacy Policy</a></li>
           <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
-          <li><a href="https://www.twilio.com/en-us/legal/privacy" target="_blank" rel="noopener noreferrer">Twilio Privacy Policy</a></li>
           <li><a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase Privacy Policy</a></li>
           <li><a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">OpenAI Privacy Policy</a></li>
           <li><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a></li>
